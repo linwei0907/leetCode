@@ -75,11 +75,11 @@ class Solution:
         s = '(' + s + ')'
 
         tokens = self.parse(s)
-        print(tokens)
+
         tokens = self.insert_zero(tokens)
-        print(tokens)
+
         tokens = self.to_postfix(tokens)
-        print(tokens)
+
         res = self.solve_postfix(tokens)
 
         return res      
